@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Noto+Serif:ital,wght@1,400;1,700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-dark: #170312;
+    --purple-medium: #33032d;
+    --purple-light: #531253;
+    --gray-light: #eaeaea;
+    --white: #f4fffd;
+}
+
+.header-image {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg-girl.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.header-image .header-text {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--purple-light);
+
+}
+
+.header-image .header-text:hover {
+
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.header-image .header-text h1 {
+    font-size: calc(2rem + 2vw);
+    font-family: 'Noto Serif', serif;
+}
+
+.header-image .header-text .header-cite {
+    font-size: calc(1.5rem + 1.5vw);
+    font-family: 'Caveat', cursive;
+    width: 60%;
+}
+
+.header-image .header-text .header-cite .quote {
+    width: 2rem;
+    height: auto;
+}
+
+.header-image .header-text .header-cite .signature {
+    text-align: right;
+}
+
+
+
+.nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--purple-medium);
+    font-family: 'Noto Serif', serif;
+    z-index: 5;
+
+}
+
+.nav .nav-toggle {
+    width: 2rem;
+    height: auto;
+    cursor: pointer;
+    display: none;
+
+}
+
+
+.nav .nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav .nav-menu .link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-size: calc(0.6rem + 0.6vw);
+    color: var(--gray-light);
+    transition: .5s ease all;
+}
+
+.nav .nav-menu .link:hover {
+    transform: translateY(40%);
+    background-color: var(--purple-light);
+}
+
+.about {
+    margin-top: 8rem;
+}
+
+.subtitle {
+    font-size: calc(0.8em + 0.8vw);
+    color: var(--purple-dark);
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    z-index: 2;
+    margin-top: 1em;
+}
+
+.subtitle span {
+    background-color: var(--gray-light);
+    padding: 0 15px;
+    z-index: 3;
+    position: relative;
+
+}
+
+.subtitle::after {
+    content: "";
+    display: inline-block;
+    height: 0.1em;
+    width: 100%;
+    background: var(--purple-dark);
+    position: relative;
+    top: -1.5em;
+    z-index: 1;
+}
+
+.title {
+    width: 80%;
+    font-size: calc(1em + 1vw);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+.aboutme .link {
+    display: inline-block;
+    margin: 0.8em 0;
+    color: var(--purple-light);
+    font-weight: 700;
+    border-bottom: 0.1em solid transparent;
+    transition: .5s ease all;
+    text-decoration: none;
+}
+
+.aboutme .link:hover {
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    border-bottom: 0.1em solid var(--purple-light);
+}
+
+.aboutme img {
+    width: 100%;
+}
+
+.products {
+    background: var(--gray-light);
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.neurojoyas {
+    color: var(--purple-light);
+    font-size: calc(0.7rem + 0.7vw);
+    font-family: 'Noto Serif', serif;
+}
+
+
+
+figure.snip0015 {
+
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: var(--purple-light);
+    text-align: center;
+
+
+}
+
+
+figure.snip0015 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+figure.snip0015 img {
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+
+}
+
+figure.snip0015 figcaption {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    padding: 3em 3em;
+    width: 100%;
+    height: 100%;
+
+}
+
+figure.snip0015 figcaption::before {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    bottom: 50%;
+    left: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+
+figure.snip0015 h2 {
+
+    margin: 0 0 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s, -o-transform 0.35s, transform 0.35s;
+}
+
+figure.snip0015 h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(0%, 50%, 0);
+    transform: translate3d(0%, 50%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+/* figure.snip0015 h2 span {
+    font-weight: 800;
+} */
+
+
+/* figure.snip0015 p {
+    font-weight: 200;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+} */
+
+figure.snip0015 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+}
+
+figure.snip0015:hover img {
+    opacity: 0.35;
+}
+
+figure.snip0015:hover figcaption h2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+/* figure.snip0015:hover figcaption p {
+    opacity: 0.9;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+} */
+
+figure.snip0015:hover figcaption::before {
+    /* background: var(--purple-light); */
+    background: rgba(255, 255, 255, 0);
+    top: 30px;
+    bottom: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.separator {
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/monse1_med.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.separator p {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(1.4rem + 1.4vw);
+    font-family: 'Caveat', cursive;
+    /* font-family: 'Noto Serif', serif; */
+    color: white;
+    padding: 0 1rem;
+    font-weight: 300;
+}
+
+
+
+@media (max-width: 800px) {
+
+
+
+    .header-image .header-text .header-cite {
+        width: 80%;
+    }
+
+    .nav {
+        flex-direction: column;
+
+
+    }
+
+    .nav .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 4.3rem;
+        background-color: var(--purple-medium);
+        font-family: 'Noto Serif', serif;
+        width: 100%;
+        right: 100%;
+        transition: right 0.5s;
+    }
+
+    .nav .nav-toggle {
+
+        display: block;
+        width: 2rem;
+        height: auto;
+        margin: 1rem 2rem;
+
+    }
+
+    .nav .nav-menu .link {
+
+        font-size: calc(0.8rem + 0.8vw);
+        color: var(--gray-light);
+        transition: 0.5s ease all;
+    }
+
+    .nav .nav-menu .link:hover {
+        transform: translateX(40%);
+        background-color: var(--purple-light);
+
+    }
+
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    .about {
+        margin-top: 5rem;
+    }
+}
