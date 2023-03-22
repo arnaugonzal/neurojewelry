@@ -14,52 +14,74 @@
     --gray-light: #eaeaea;
     --white: #f4fffd;
 }
-
-.header-image {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../images/bg-girl.jpeg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
+header {
+    height: auto;
+   position: relative;
 }
 
-.header-image .header-text {
+
+
+header .neuron {
+    opacity: 0.2;
+   position:absolute;
+
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    height:100%;
+   
+   
+}
+header .neuron {
+    animation-duration: 4s;
+    animation-name: neuron;
+  }
+  
+  @keyframes neuron {
+    from {
+     opacity:0;
+    }
+  
+    to {
+   opacity:0.2;
+    }
+  }
+
+
+
+.header-title {
+ 
     color: var(--purple-light);
 
+
 }
 
-.header-image .header-text:hover {
-
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-
-.header-image .header-text h1 {
-    font-size: calc(2rem + 2vw);
+.header-title h1 {
+   
+    font-size: calc(2.5rem + 2vw);
     font-family: 'Noto Serif', serif;
+ text-align: left;
+
+
+    
+    
 }
 
-.header-image .header-text .header-cite {
-    font-size: calc(1.5rem + 1.5vw);
+.header-cite {
+    
+    color: var(--purple-light);
+    font-size: calc(1.2rem + 1.5vw);
     font-family: 'Caveat', cursive;
-    width: 60%;
+   
 }
+  
+    
 
-.header-image .header-text .header-cite .quote {
+.header-cite .quote {
     width: 2rem;
     height: auto;
+    
 }
 
-.header-image .header-text .header-cite .signature {
+.header-cite .signature {
     text-align: right;
 }
 
@@ -329,12 +351,44 @@ figure.snip0015:hover figcaption::before {
 
 @media (max-width: 800px) {
 
+   
+    .header-title {
+          margin: auto;
 
-
-    .header-image .header-text .header-cite {
-        width: 80%;
+         
+    }
+  
+    .header-title h1 {
+        font-size: calc(3rem + 2vw);
+        font-family: 'Noto Serif', serif;
+        
     }
 
+    .header-cite {
+        font-size: calc(1.2rem + 1.5vw);
+        font-family: 'Caveat', cursive;
+        width: 70%;
+     
+      
+        
+    }
+ 
+   
+
+    header .neuron {
+        opacity: 0.2;
+        position: absolute;
+        width:100%;
+        height: 100%;
+       
+    }
+
+    .header-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+        
     .nav {
         flex-direction: column;
 
